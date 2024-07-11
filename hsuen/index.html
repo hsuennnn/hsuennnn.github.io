@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | Udders Singapore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<body>
+    <div class="container" data-aos="zoom-in">
+        <img id="meltedbg" src="meltedbg.png">
+        <img id="udderslogo" src="https://static.wixstatic.com/media/fcd8fd_67c396f9e026451dabd50055bf9234ac~mv2.png/v1/crop/x_0,y_0,w_1747,h_833/fill/w_150,h_71,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fcd8fd_67c396f9e026451dabd50055bf9234ac~mv2.png" alt="Udders Singapore">
+        <h1>404</h1>
+        <h2><b>Oops! It looks like you found a melted page...</b></h2>
+        <p><b>But don't worry, we've got plenty of delicious content </br> back at our homepage!</b></p>
+        <a href="https://www.udders.com.sg/home"><b>Go Back to Home</b></a>
+    </div>
+    <h3><b>Oh! What's down here?</b></h3>
+    <img id="icecream" data-aos="zoom-in" src="shocked_ice_cream.png">
+    <img id="orangearrow" data-aos="zoom-in" src="orange-arrow.png">
+    <img id="interest" data-aos="zoom-in" src="interest ice cream.png">
+    
+    <div id="game">
+        <div class="left-section">
+            <div class="message" data-aos="zoom-in"><b>Having a sweet tooth? </br> Collect as many ice cream scoops </br>as you can!</b></div>
+            <div id="instructions" data-aos="zoom-in"><b>Collect at least 30 scoops to get a code to redeem </br> a free scoop of Udders Ice Cream!</b></div>
+            <div class="button-container">
+                <button class="button" id="startButton" data-aos="zoom-in">Start Game</button>
+                <button class="button" id="pauseButton" data-aos="zoom-in">Pause Music</button>
+            </div>
+        </div>
+        <canvas id="gameCanvas" data-aos="zoom-in"></canvas>
+        <audio id="backgroundAudio" src="Party With Your Heart_1_Main Mix.mp3" loop></audio>
+    </div>
+    
+    <div id="content">
+        <img id="column1" src="postit.png" data-aos="zoom-in-right">
+        <img id="column2" src="postit2.png" data-aos="zoom-in">
+        <img id="column3" src="postit3.png" data-aos="zoom-in-left">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

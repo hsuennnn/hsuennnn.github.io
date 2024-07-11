@@ -1,0 +1,225 @@
+body {
+    background: url("uddersbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ef722f;
+    background-attachment: fixed;
+    color: #003b49;
+    font-family: 'Bocadillo';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(239, 149, 47, 0.486);
+    z-index: -1;
+}
+
+.container {
+    max-width: 700px;
+    margin:auto;
+    background-color: #fff8e6;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+h1 {
+    font-size: 140px;
+    font-family: 'Bocadillo';
+    font-weight: normal;
+    font-style: normal;
+    position:absolute;
+    left: 225px;
+    top: 30px;
+    width: 200px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Bocadillo';
+    font-weight: normal;
+    font-style: normal;
+    position:absolute;
+    left: 60px;
+    top: 280px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Bocadillo';
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Bocadillo';
+    font-weight: normal;
+    font-style: normal;
+    position:absolute;
+    left: 83px;
+    top: 330px;
+}
+
+a {
+    display: inline-block;
+    background-color: #ef722f;
+    color: #fff8e6;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+    position:absolute;
+    left: 250px;
+    top: 420px;
+}
+
+a:hover {
+    background-color: #d8601f;
+    transform: translateY(-3px);
+}
+
+#content {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #003b49;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#column1, #column2, #column3 {
+    max-width: 300px;
+    text-align: center;
+}
+
+#column1 img, #column3 img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ef722f;
+    color: #fff8e6;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Bocadillo';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.button:hover {
+    background-color: #d8601f;
+    transform: translateY(-3px);
+}
+
+#game {
+    border-top: 1px solid #003b49;
+    width: 100%;
+    display: flex;
+}
+
+.left-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    width: 50%;
+    height: 400px;
+    border: 2px solid #003b49;
+    background-color: #fff8e6;
+    margin: 20px auto;
+    display: block;
+}
+
+.message {
+    font-size: 35px;
+    font-family: 'Bocadillo';
+    font-weight: normal;
+    font-style: normal;
+}
+
+#icecream {
+    position:absolute;
+    left: 50px;
+    top: 90px;
+    width: 350px;
+    animation: MyAnimation 4s infinite;
+}
+
+@keyframes MyAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#meltedbg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: auto;
+    border-radius: 12px;
+}
+
+#udderslogo {
+    position:absolute;
+    left: 270px;
+    top: 15px;
+    width: 150px;
+}
+
+#orangearrow {
+    position:absolute;
+    left: 870px;
+    top: 450px;
+    width: 280px;
+}
+
+#interest {
+    position:absolute;
+    left: 1000px;
+    top: 370px;
+    width: 340px;
+}
+
+#instructions {
+    margin-top: 25px;
+    font-size: 20px;
+}
